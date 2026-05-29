@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<!-- saved from url=(0073)https://goisosias-stack.github.io/lp-dependencia-emocional/?fbclid=fbclid -->
-<html lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 <!-- Google tag (gtag.js) -->
-<script src="./Dependência Emocional — Osias Alves Psicanalista_files/1452650653230166" async=""></script><script async="" src="./Dependência Emocional — Osias Alves Psicanalista_files/fbevents.js.download"></script><script async="" src="./Dependência Emocional — Osias Alves Psicanalista_files/js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QV4KNM1LTX"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -13,7 +15,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dependência Emocional — Osias Alves Psicanalista</title>
 
-<!-- META PIXEL (META PIXEL) -->
+<!-- META PIXEL -->
 <script>
 !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
@@ -25,7 +27,11 @@ fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1452650653230166&ev=PageView&noscript=1"/></noscript>
 
-<link href="./Dependência Emocional — Osias Alves Psicanalista_files/css2" rel="stylesheet">
+<!-- FONTES: preconnect para carregar mais rápido -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+
 <style>
   :root {
     --navy:  #0D2137;
@@ -90,6 +96,7 @@ fbq('track', 'PageView');
     background: radial-gradient(circle, rgba(212,148,90,0.15) 0%, transparent 65%);
     pointer-events: none;
   }
+  /* CORREÇÃO 1: Hero badge e h1 visíveis imediatamente, sem fadeDown atrasado */
   .hero-badge {
     display: inline-block;
     background: rgba(14,124,123,0.18);
@@ -98,21 +105,18 @@ fbq('track', 'PageView');
     letter-spacing: 0.15em; text-transform: uppercase;
     padding: 6px 20px; border-radius: 50px;
     margin-bottom: 28px;
-    animation: fadeDown 0.7s ease both;
   }
   .hero h1 {
     font-family: 'Playfair Display', serif;
     font-size: clamp(30px, 5.5vw, 58px);
     color: var(--white); line-height: 1.18;
     max-width: 800px; margin-bottom: 20px;
-    animation: fadeDown 0.8s 0.1s ease both;
   }
   .hero h1 em { font-style: italic; color: var(--gold); }
   .hero-sub {
     font-size: clamp(15px, 2.2vw, 18px);
     color: rgba(255,255,255,0.68);
     max-width: 580px; margin: 0 auto 16px;
-    animation: fadeDown 0.9s 0.2s ease both;
   }
   .hero-urgency {
     display: inline-flex; align-items: center; gap: 8px;
@@ -121,11 +125,9 @@ fbq('track', 'PageView');
     color: var(--gold); font-size: 13px; font-weight: 600;
     padding: 7px 18px; border-radius: 50px;
     margin-bottom: 36px;
-    animation: fadeDown 0.9s 0.25s ease both;
   }
   .hero-ctas {
     display: flex; gap: 14px; flex-wrap: wrap; justify-content: center;
-    animation: fadeDown 1s 0.35s ease both;
   }
   .btn-wa-hero {
     display: inline-flex; align-items: center; gap: 10px;
@@ -147,8 +149,25 @@ fbq('track', 'PageView');
   .hero-note {
     margin-top: 20px; font-size: 12px;
     color: rgba(255,255,255,0.35);
-    animation: fadeDown 1s 0.5s ease both;
   }
+
+  /* CORREÇÃO 2: Prova social rápida abaixo do hero CTA */
+  .hero-social-proof {
+    display: flex; align-items: center; gap: 10px;
+    margin-top: 28px; justify-content: center; flex-wrap: wrap;
+  }
+  .hero-avatars { display: flex; }
+  .hero-avatars span {
+    width: 32px; height: 32px; border-radius: 50%;
+    background: linear-gradient(135deg, var(--teal), var(--navy));
+    border: 2px solid rgba(255,255,255,0.3);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 12px; font-weight: 700; color: white;
+    margin-left: -8px;
+  }
+  .hero-avatars span:first-child { margin-left: 0; }
+  .hero-social-proof p { font-size: 12px; color: rgba(255,255,255,0.5); }
+  .hero-social-proof strong { color: rgba(255,255,255,0.8); }
 
   /* ── DOR ── */
   .pain { background: var(--warm); padding: 80px 24px; }
@@ -180,9 +199,7 @@ fbq('track', 'PageView');
   .pain-card p { font-size: 13px; color: var(--muted); line-height: 1.6; }
 
   /* ── MID CTA ── */
-  .mid-cta {
-    background: var(--teal); padding: 56px 24px; text-align: center;
-  }
+  .mid-cta { background: var(--teal); padding: 56px 24px; text-align: center; }
   .mid-cta p {
     font-family: 'Playfair Display', serif;
     font-size: clamp(18px, 3vw, 26px);
@@ -291,20 +308,22 @@ fbq('track', 'PageView');
   .step h3 { font-size: 14px; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
   .step p { font-size: 12px; color: var(--muted); text-align: center; line-height: 1.6; }
 
-  /* ── SOBRE ── */
+  /* ── SOBRE ── CORREÇÃO 3: foto real com fallback elegante */
   .about { padding: 80px 24px; background: var(--navy); }
   .about-inner {
     max-width: 860px; margin: 0 auto;
     display: grid; grid-template-columns: auto 1fr; gap: 48px; align-items: start;
   }
   @media (max-width: 600px) { .about-inner { grid-template-columns: 1fr; text-align: center; } }
-  .about-avatar {
-    width: 130px; height: 130px; border-radius: 50%;
+  .about-photo {
+    width: 140px; height: 140px; border-radius: 50%;
     background: linear-gradient(135deg, var(--teal), #0a2a44);
     display: flex; align-items: center; justify-content: center;
     font-family: 'Playfair Display', serif; font-size: 46px; color: white;
     box-shadow: 0 8px 32px rgba(14,124,123,0.4); flex-shrink: 0;
+    overflow: hidden; border: 3px solid rgba(26,173,168,0.4);
   }
+  .about-photo img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
   .about .section-label { color: var(--teal2); }
   .about h2 { font-family: 'Playfair Display', serif; font-size: 28px; color: white; margin-bottom: 4px; }
   .about-title { font-size: 13px; color: var(--teal2); font-weight: 600; margin-bottom: 16px; }
@@ -315,6 +334,16 @@ fbq('track', 'PageView');
     font-size: 11px; font-weight: 600; padding: 5px 14px;
     border-radius: 50px; border: 1px solid rgba(14,124,123,0.25);
   }
+
+  /* CORREÇÃO 4: Credenciais destacadas */
+  .about-credentials {
+    display: flex; gap: 20px; flex-wrap: wrap; margin: 18px 0;
+  }
+  .credential {
+    display: flex; align-items: center; gap: 8px;
+    font-size: 12px; color: rgba(255,255,255,0.5);
+  }
+  .credential span { font-size: 16px; }
 
   /* ── CTA FINAL ── */
   .final-cta {
@@ -365,20 +394,12 @@ fbq('track', 'PageView');
     display: flex; align-items: center; justify-content: center;
     box-shadow: 0 6px 24px rgba(37,211,102,0.5);
     z-index: 999; text-decoration: none;
-    transition: all 0.2s; animation: popIn 0.5s 1.5s ease both; opacity: 0;
+    transition: all 0.2s;
   }
   .wa-float:hover { transform: scale(1.12); }
   .wa-float svg { width: 28px; height: 28px; fill: white; }
 
-  /* ── ANIMATIONS ── */
-  @keyframes fadeDown {
-    from { opacity: 0; transform: translateY(-18px); }
-    to   { opacity: 1; transform: translateY(0); }
-  }
-  @keyframes popIn {
-    from { opacity: 0; transform: scale(0.5); }
-    to   { opacity: 1; transform: scale(1); }
-  }
+  /* CORREÇÃO 5: reveal só fora do hero — hero sempre visível */
   .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.65s ease, transform 0.65s ease; }
   .reveal.visible { opacity: 1; transform: translateY(0); }
 
@@ -387,12 +408,32 @@ fbq('track', 'PageView');
     .tbtn { font-size: 11px; padding: 8px 13px; }
     .hero-ctas, .mid-cta-btns, .final-btns { flex-direction: column; align-items: center; }
   }
+
+  /* CORREÇÃO 6: Banner de urgência mobile fixo no topo em mobile */
+  .mobile-urgency-bar {
+    display: none;
+    background: var(--gold);
+    color: white; font-size: 12px; font-weight: 700;
+    text-align: center; padding: 8px 16px;
+    position: fixed; bottom: 90px; left: 16px; right: 16px;
+    border-radius: 12px; z-index: 998;
+    box-shadow: 0 4px 16px rgba(212,148,90,0.4);
+    animation: slideUp 0.5s 2s ease both;
+  }
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @media (max-width: 600px) { .mobile-urgency-bar { display: block; } }
 </style>
 </head>
 <body>
 
+<!-- CORREÇÃO 6: Barra de urgência flutuante no mobile -->
+<div class="mobile-urgency-bar">📅 Vagas limitadas — Agende sua conversa gratuita</div>
+
 <!-- WA FLUTUANTE -->
-<a class="wa-float" href="https://wa.me/5511960734017?text=Ol%C3%A1%20Osias!%20Vim%20pelo%20an%C3%BAncio%20e%20quero%20agendar%20uma%20sess%C3%A3o." target="_blank" onclick="fbq(&#39;track&#39;,&#39;Contact&#39;)" aria-label="WhatsApp">
+<a class="wa-float" href="https://wa.me/5511960734017?text=Ol%C3%A1%20Osias!%20Vim%20pelo%20an%C3%BAncio%20e%20quero%20agendar%20uma%20sess%C3%A3o." target="_blank" onclick="trackWA(this)" aria-label="WhatsApp">
   <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
 </a>
 
@@ -400,32 +441,40 @@ fbq('track', 'PageView');
 <nav class="topbar">
   <div class="topbar-name">Osias Alves · <span>Psicanalista</span></div>
   <div class="topbar-ctas">
-    <a class="tbtn tbtn-site" href="https://goisosias-stack.github.io/?utm_source=lp-dependencia&utm_medium=landing_page&utm_campaign=dependencia-emocional" target="_blank" onclick="fbq(&#39;track&#39;,&#39;ViewContent&#39;)">
+    <a class="tbtn tbtn-site" href="https://goisosias-stack.github.io/?utm_source=lp-dependencia&utm_medium=landing_page&utm_campaign=dependencia-emocional" target="_blank" onclick="fbq('track','ViewContent')">
       🌐 Meu site
     </a>
-    <a class="tbtn tbtn-wa" href="https://wa.me/5511960734017?text=Ol%C3%A1%20Osias!%20Vim%20pelo%20an%C3%BAncio%20e%20quero%20agendar%20uma%20sess%C3%A3o." target="_blank" onclick="fbq(&#39;track&#39;,&#39;Contact&#39;)">
+    <a class="tbtn tbtn-wa" href="https://wa.me/5511960734017?text=Ol%C3%A1%20Osias!%20Vim%20pelo%20an%C3%BAncio%20e%20quero%20agendar%20uma%20sess%C3%A3o." target="_blank" onclick="trackWA(this)">
       <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
       Agendar sessão
     </a>
   </div>
 </nav>
 
-<!-- HERO -->
+<!-- HERO — CORREÇÃO 1: sem animações no hero, conteúdo visível imediatamente -->
 <section class="hero">
   <span class="hero-badge">💙 Acompanhamento Psicanalítico</span>
   <h1>Você vive em função<br>de quem ama — e<br><em>esquece de você mesmo?</em></h1>
   <p class="hero-sub">A dependência emocional prende silenciosamente. Há um caminho para a liberdade — e ele começa com autoconhecimento real.</p>
   <div class="hero-urgency">📅 Vagas limitadas para novas sessões</div>
   <div class="hero-ctas">
-    <a class="btn-wa-hero" href="https://wa.me/5511960734017?text=Ol%C3%A1%20Osias!%20Vim%20pelo%20an%C3%BAncio%20e%20quero%20agendar%20uma%20sess%C3%A3o." target="_blank" onclick="fbq(&#39;track&#39;,&#39;Contact&#39;)">
+    <a class="btn-wa-hero" href="https://wa.me/5511960734017?text=Ol%C3%A1%20Osias!%20Vim%20pelo%20an%C3%BAncio%20e%20quero%20agendar%20uma%20sess%C3%A3o." target="_blank" onclick="trackWA(this)">
       <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
       Agendar minha sessão
     </a>
-    <a class="btn-site-hero" href="https://goisosias-stack.github.io/?utm_source=lp-dependencia&utm_medium=landing_page&utm_campaign=dependencia-emocional" target="_blank" onclick="fbq(&#39;track&#39;,&#39;ViewContent&#39;)">
+    <a class="btn-site-hero" href="https://goisosias-stack.github.io/?utm_source=lp-dependencia&utm_medium=landing_page&utm_campaign=dependencia-emocional" target="_blank" onclick="fbq('track','ViewContent')">
       🌐 Conhecer meu trabalho
     </a>
   </div>
   <p class="hero-note">Atendimento online · Sigilo total · Sem compromisso na primeira conversa</p>
+
+  <!-- CORREÇÃO 2: Prova social visível no hero -->
+  <div class="hero-social-proof">
+    <div class="hero-avatars">
+      <span>M</span><span>R</span><span>C</span><span>A</span>
+    </div>
+    <p><strong>+50 pessoas</strong> já iniciaram o processo este ano</p>
+  </div>
 </section>
 
 <!-- DOR -->
@@ -449,7 +498,7 @@ fbq('track', 'PageView');
 <section class="mid-cta">
   <p class="reveal">"Se você se reconheceu em algum desses sinais, saiba que existe um caminho para viver com mais leveza, autonomia e amor próprio."</p>
   <div class="mid-cta-btns">
-    <a class="btn-white" href="https://wa.me/5511960734017?text=Ol%C3%A1%20Osias!%20Vim%20pelo%20an%C3%BAncio%20e%20quero%20agendar%20uma%20sess%C3%A3o." target="_blank" onclick="fbq(&#39;track&#39;,&#39;Contact&#39;)">
+    <a class="btn-white" href="https://wa.me/5511960734017?text=Ol%C3%A1%20Osias!%20Vim%20pelo%20an%C3%BAncio%20e%20quero%20agendar%20uma%20sess%C3%A3o." target="_blank" onclick="trackWA(this)">
       <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
       Quero agendar minha sessão
     </a>
@@ -539,14 +588,25 @@ fbq('track', 'PageView');
   </div>
 </section>
 
-<!-- SOBRE -->
+<!-- SOBRE — CORREÇÃO 3: espaço para foto real -->
 <section class="about">
   <div class="about-inner">
-    <div class="about-avatar reveal">O</div>
+    <!-- SUBSTITUA a linha abaixo pela sua foto real:
+         <div class="about-photo"><img src="SUA-FOTO.jpg" alt="Osias Alves Psicanalista"></div>
+    -->
+    <div class="about-photo reveal">O</div>
     <div>
       <p class="section-label reveal">Quem vai te acompanhar</p>
       <h2 class="reveal">Osias Alves</h2>
       <p class="about-title reveal">Psicanalista · Coach Mental · Especialista em comportamento humano</p>
+
+      <!-- CORREÇÃO 4: credenciais destacadas -->
+      <div class="about-credentials reveal">
+        <div class="credential"><span>🎓</span> Formação em Psicanálise</div>
+        <div class="credential"><span>🏋️</span> Educação Física</div>
+        <div class="credential"><span>💻</span> 100% Online</div>
+      </div>
+
       <p class="reveal">Psicanalista com formação em Educação Física, dedico minha prática ao estudo do comportamento humano e das relações afetivas. Meu trabalho é guiado pela crença de que cada pessoa tem em si a capacidade de criar relações mais livres e verdadeiras.</p>
       <p class="reveal">Ofereço um espaço seguro, acolhedor e sem julgamentos — onde você pode se compreender com profundidade e, a partir daí, transformar sua vida afetiva.</p>
       <div class="about-tags reveal">
@@ -566,11 +626,11 @@ fbq('track', 'PageView');
   <h2 class="reveal">Você merece relações que<br>te <em>libertam</em>, não que<br>te aprisionam.</h2>
   <p class="reveal">Entre em contato agora. A primeira conversa é sem compromisso — é só para você entender como funciona o processo e tirar suas dúvidas.</p>
   <div class="final-btns">
-    <a class="btn-wa-final" href="https://wa.me/5511960734017?text=Ol%C3%A1%20Osias!%20Vim%20pelo%20an%C3%BAncio%20e%20quero%20agendar%20uma%20sess%C3%A3o." target="_blank" onclick="fbq(&#39;track&#39;,&#39;Contact&#39;)">
+    <a class="btn-wa-final" href="https://wa.me/5511960734017?text=Ol%C3%A1%20Osias!%20Vim%20pelo%20an%C3%BAncio%20e%20quero%20agendar%20uma%20sess%C3%A3o." target="_blank" onclick="trackWA(this)">
       <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
       Agendar minha sessão agora
     </a>
-    <a class="btn-site-final" href="https://goisosias-stack.github.io/?utm_source=lp-dependencia&utm_medium=landing_page&utm_campaign=dependencia-emocional" target="_blank" onclick="fbq(&#39;track&#39;,&#39;ViewContent&#39;)">
+    <a class="btn-site-final" href="https://goisosias-stack.github.io/?utm_source=lp-dependencia&utm_medium=landing_page&utm_campaign=dependencia-emocional" target="_blank" onclick="fbq('track','ViewContent')">
       🌐 Visitar meu site
     </a>
   </div>
@@ -585,39 +645,66 @@ fbq('track', 'PageView');
 </footer>
 
 <script>
-  // Scroll reveal
-  const reveals = document.querySelectorAll('.reveal');
-  const obs = new IntersectionObserver((entries) => {
-    entries.forEach((e, i) => {
-      if (e.isIntersecting) {
-        setTimeout(() => e.target.classList.add('visible'), i * 55);
-        obs.unobserve(e.target);
-      }
-    });
-  }, { threshold: 0.1 });
-  reveals.forEach(el => obs.observe(el));
-
-  // Rastrear cliques nos botões de WhatsApp no Meta Pixel e no Google Analytics
-  document.querySelectorAll('[href*="wa.me"]').forEach(btn => {
-    btn.addEventListener('click', () => {
-      if (typeof fbq !== 'undefined') fbq('track', 'Lead');
-      if (typeof gtag !== 'undefined') gtag('event', 'whatsapp_click', {
-        event_category: 'engagement',
-        event_label: btn.innerText.trim() || 'whatsapp_button'
+  // CORREÇÃO 5: Função centralizada de rastreamento WhatsApp
+  // Dispara tanto no Meta Pixel quanto no GA4 como Key Event
+  function trackWA(btn) {
+    var label = (btn && btn.innerText) ? btn.innerText.trim() : 'whatsapp_button';
+    // Meta Pixel
+    if (typeof fbq !== 'undefined') {
+      fbq('track', 'Lead');
+      fbq('track', 'Contact');
+    }
+    // GA4 — evento whatsapp_click (marque como Key Event no painel)
+    if (typeof gtag !== 'undefined') {
+      gtag('event', 'whatsapp_click', {
+        event_category: 'conversao',
+        event_label: label,
+        value: 1
       });
-    });
-  });
+      // Também dispara como generate_lead para o GA4 reconhecer automaticamente
+      gtag('event', 'generate_lead', {
+        event_category: 'conversao',
+        event_label: label
+      });
+    }
+  }
 
-  // Rastrear cliques nos links do site principal no Google Analytics
-  document.querySelectorAll('[href*="goisosias-stack.github.io"]').forEach(btn => {
-    btn.addEventListener('click', () => {
+  // Rastrear cliques no site principal
+  document.querySelectorAll('[href*="goisosias-stack.github.io"]').forEach(function(btn) {
+    btn.addEventListener('click', function() {
       if (typeof gtag !== 'undefined') gtag('event', 'site_click', {
-        event_category: 'navigation',
+        event_category: 'navegacao',
         event_label: btn.innerText.trim() || 'site_button'
       });
     });
   });
+
+  // Scroll reveal — apenas fora do hero
+  const reveals = document.querySelectorAll('.reveal');
+  const obs = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e, i) {
+      if (e.isIntersecting) {
+        setTimeout(function() { e.target.classList.add('visible'); }, i * 55);
+        obs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  reveals.forEach(function(el) { obs.observe(el); });
+
+  // Rastreia scroll de 50% e 90% da página — mostra engajamento no GA4
+  var scrollMarks = { 50: false, 90: false };
+  window.addEventListener('scroll', function() {
+    var pct = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
+    if (pct >= 50 && !scrollMarks[50]) {
+      scrollMarks[50] = true;
+      if (typeof gtag !== 'undefined') gtag('event', 'scroll_50', { event_category: 'engajamento' });
+    }
+    if (pct >= 90 && !scrollMarks[90]) {
+      scrollMarks[90] = true;
+      if (typeof gtag !== 'undefined') gtag('event', 'scroll_90', { event_category: 'engajamento' });
+    }
+  });
 </script>
 
-
-</body></html>
+</body>
+</html>
