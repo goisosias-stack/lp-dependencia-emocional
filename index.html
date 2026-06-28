@@ -258,8 +258,9 @@ fbq('track', 'PageView');
   .mid-cta { background: var(--teal); padding: 56px 24px; text-align: center; }
   .mid-cta p {
     font-family: 'Playfair Display', serif;
-    font-size: clamp(18px, 3vw, 26px);
-    color: white; max-width: 640px;
+    font-size: clamp(20px, 3.4vw, 30px);
+    font-weight: 700;
+    color: white; max-width: 680px;
     margin: 0 auto 28px; font-style: italic; line-height: 1.5;
   }
   .mid-cta-btns { display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; }
@@ -576,7 +577,7 @@ fbq('track', 'PageView');
     <div class="pain-grid">
       <div class="pain-card reveal"><div class="ico">💔</div><h3>Medo constante de abandono</h3><p>Você vive em alerta, com medo de perder quem ama — mesmo que nada indique isso.</p></div>
       <div class="pain-card reveal"><div class="ico">🪞</div><h3>Identidade moldada pelo outro</h3><p>Suas escolhas, humor e opinião dependem da aprovação de outra pessoa.</p></div>
-      <div class="pain-card reveal"><div class="ico">🔄</div><h3>Padrões que se repetem</h3><p>Você termina relacionamentos difíceis e logo cria outros iguais — com pessoas diferentes.</p></div>
+      <div class="pain-card reveal"><div class="ico">🔄</div><h3>Relacionamentos tóxicos que se repetem</h3><p>Você termina relacionamentos difíceis e logo cria outros iguais — com pessoas diferentes.</p></div>
       <div class="pain-card reveal"><div class="ico">😔</div><h3>Anulação de si mesmo</h3><p>Você abre mão dos seus desejos e limites para agradar ou não perder o outro.</p></div>
       <div class="pain-card reveal"><div class="ico">⚡</div><h3>Intensidade emocional extrema</h3><p>O amor que você sente é sufocante — oscila entre euforia e desespero rapidamente.</p></div>
       <div class="pain-card reveal"><div class="ico">🚪</div><h3>Dificuldade de colocar limites</h3><p>Dizer "não" parece impossível. Você prefere se machucar a desapontar quem ama.</p></div>
@@ -639,7 +640,10 @@ fbq('track', 'PageView');
 </section>
 
 <!-- MID CTA 1 -->
-  <p class="reveal">"Se você se reconheceu em algum desses padrões, saiba que existe um caminho para viver com mais leveza, autonomia e amor próprio. Comece com uma sessão."</p>
+<section class="mid-cta">
+  <p class="reveal" style="position:relative;">
+    <span style="font-family:'Playfair Display',serif;font-size:48px;color:var(--gold);line-height:0;position:relative;top:18px;margin-right:4px;">&ldquo;</span>Se você se reconheceu em algum desses padrões, saiba que existe um caminho para viver com mais leveza, autonomia e amor próprio. Comece com uma sessão.<span style="font-family:'Playfair Display',serif;font-size:48px;color:var(--gold);line-height:0;position:relative;top:18px;margin-left:4px;">&rdquo;</span>
+  </p>
   <div class="mid-cta-btns">
     <a class="btn-white" href="https://pay.kiwify.com.br/oMcCAsN" target="_blank" onclick="trackCheckout('mid-cta')" style="color: var(--gold);">
       🗓️ Agendar sessão online — R$97
@@ -701,7 +705,7 @@ fbq('track', 'PageView');
     <div class="c-card" data-idx="2" style="background:#eef3f8;border-radius:24px;padding:44px 36px;position:absolute;width:100%;box-sizing:border-box;opacity:0;transform:translateY(20px);transition:all 0.4s;pointer-events:none;">
       <div style="width:72px;height:72px;background:var(--gold);border-radius:18px;display:flex;align-items:center;justify-content:center;font-size:32px;margin:0 auto 24px;">∞</div>
       <h3 style="font-family:'Playfair Display',serif;font-size:24px;color:#08111f;margin-bottom:16px;font-weight:700;">Construção de Sentido</h3>
-      <p style="font-size:15px;color:#46586b;line-height:1.8;">Pela associação livre, ligamos os pontos da sua história. Não se trata apenas de entender o passado, mas de dar um novo lugar ao que foi vivido.</p>
+      <p style="font-size:15px;color:#46586b;line-height:1.8;">Através da sua fala, ligamos os pontos da sua história. Não se trata apenas de entender o passado, mas de dar um novo lugar ao que foi vivido.</p>
     </div>
     <div class="c-card" data-idx="3" style="background:#eef3f8;border-radius:24px;padding:44px 36px;position:absolute;width:100%;box-sizing:border-box;opacity:0;transform:translateY(20px);transition:all 0.4s;pointer-events:none;">
       <div style="width:72px;height:72px;background:var(--gold);border-radius:18px;display:flex;align-items:center;justify-content:center;font-size:32px;margin:0 auto 24px;">✨</div>
@@ -750,11 +754,11 @@ fbq('track', 'PageView');
     d.addEventListener('click', function() {
       clearInterval(timer);
       goTo(parseInt(d.getAttribute('data-idx')));
-      timer = setInterval(next, 4000);
+      timer = setInterval(next, 10000);
     });
   });
 
-  timer = setInterval(next, 4000);
+  timer = setInterval(next, 10000);
 })();
 </script>
 
