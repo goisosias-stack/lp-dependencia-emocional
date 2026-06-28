@@ -34,12 +34,12 @@ fbq('track', 'PageView');
 
 <style>
   :root {
-    --navy:  #0D2137;
-    --teal:  #0E7C7B;
-    --teal2: #1AADA8;
-    --gold:  #D4945A;
+    --navy:  #08111f;
+    --teal:  #1877c9;
+    --teal2: #29b6f6;
+    --gold:  #c9973a;
     --cream: #FDF8F3;
-    --warm:  #F5EDE2;
+    --warm:  #EAF1F8;
     --white: #FFFFFF;
     --muted: #6B7280;
     --text:  #1A1A2E;
@@ -51,7 +51,7 @@ fbq('track', 'PageView');
   /* ── TOPO FIXO ── */
   .topbar {
     position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-    background: rgba(13,33,55,0.97);
+    background: rgba(8,17,31,0.97);
     backdrop-filter: blur(8px);
     display: flex; align-items: center; justify-content: space-between;
     padding: 12px 24px; gap: 12px;
@@ -66,8 +66,8 @@ fbq('track', 'PageView');
     border-radius: 50px; text-decoration: none; transition: all 0.2s;
     white-space: nowrap;
   }
-  .tbtn-wa  { background: var(--gold); color: white; box-shadow: 0 4px 16px rgba(212,148,90,0.35); }
-  .tbtn-wa:hover  { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(212,148,90,0.5); }
+  .tbtn-wa  { background: var(--gold); color: white; box-shadow: 0 4px 16px rgba(201,151,58,0.35); }
+  .tbtn-wa:hover  { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(201,151,58,0.5); }
   .tbtn-site { background: var(--teal); color: white; }
   .tbtn-site:hover { background: var(--teal2); transform: translateY(-2px); }
   .tbtn svg { width: 16px; height: 16px; fill: white; flex-shrink: 0; }
@@ -86,24 +86,24 @@ fbq('track', 'PageView');
     content: ''; position: absolute;
     top: -150px; left: -150px;
     width: 600px; height: 600px; border-radius: 50%;
-    background: radial-gradient(circle, rgba(14,124,123,0.22) 0%, transparent 65%);
+    background: radial-gradient(circle, rgba(24,119,201,0.22) 0%, transparent 65%);
     pointer-events: none;
   }
   .hero::after {
     content: ''; position: absolute;
     bottom: -100px; right: -80px;
     width: 450px; height: 450px; border-radius: 50%;
-    background: radial-gradient(circle, rgba(212,148,90,0.15) 0%, transparent 65%);
+    background: radial-gradient(circle, rgba(201,151,58,0.15) 0%, transparent 65%);
     pointer-events: none;
   }
   /* CORREÇÃO 1: Hero badge e h1 visíveis imediatamente, sem fadeDown atrasado */
   .hero-badge {
     display: inline-block;
-    background: rgba(14,124,123,0.18);
-    border: 1px solid rgba(26,173,168,0.35);
+    background: rgba(24,119,201,0.18);
+    border: 1px solid rgba(41,182,246,0.35);
     color: var(--teal2); font-size: 11px; font-weight: 700;
     letter-spacing: 0.15em; text-transform: uppercase;
-    padding: 6px 20px; border-radius: 50px;
+    padding: 6px 20px; border-radius: 6px;
     margin-bottom: 28px;
   }
   .hero h1 {
@@ -120,8 +120,8 @@ fbq('track', 'PageView');
   }
   .hero-urgency {
     display: inline-flex; align-items: center; gap: 8px;
-    background: rgba(212,148,90,0.15);
-    border: 1px solid rgba(212,148,90,0.3);
+    background: rgba(201,151,58,0.15);
+    border: 1px solid rgba(201,151,58,0.3);
     color: var(--gold); font-size: 13px; font-weight: 600;
     padding: 7px 18px; border-radius: 50px;
     margin-bottom: 36px;
@@ -132,7 +132,7 @@ fbq('track', 'PageView');
   .btn-wa-hero {
     display: inline-flex; align-items: center; gap: 10px;
     background: #25D366; color: white; font-weight: 700; font-size: 16px;
-    padding: 18px 36px; border-radius: 50px; text-decoration: none;
+    padding: 18px 36px; border-radius: 10px; text-decoration: none;
     box-shadow: 0 10px 36px rgba(37,211,102,0.4);
     transition: all 0.2s;
   }
@@ -140,8 +140,8 @@ fbq('track', 'PageView');
   .btn-site-hero {
     display: inline-flex; align-items: center; gap: 10px;
     background: var(--teal); color: white; font-weight: 700; font-size: 16px;
-    padding: 18px 36px; border-radius: 50px; text-decoration: none;
-    box-shadow: 0 10px 30px rgba(14,124,123,0.35);
+    padding: 18px 36px; border-radius: 10px; text-decoration: none;
+    box-shadow: 0 10px 30px rgba(24,119,201,0.35);
     transition: all 0.2s;
   }
   .btn-site-hero:hover { transform: translateY(-3px); background: var(--teal2); }
@@ -168,12 +168,12 @@ fbq('track', 'PageView');
   }
   .hero-avatars { display: flex; }
   .hero-avatars span {
-    width: 32px; height: 32px; border-radius: 50%;
+    width: 32px; height: 32px; border-radius: 8px;
     background: linear-gradient(135deg, var(--teal), var(--navy));
     border: 2px solid rgba(255,255,255,0.3);
     display: flex; align-items: center; justify-content: center;
     font-size: 12px; font-weight: 700; color: white;
-    margin-left: -8px;
+    margin-left: -6px;
   }
   .hero-avatars span:first-child { margin-left: 0; }
   .hero-social-proof p { font-size: 12px; color: rgba(255,255,255,0.5); }
@@ -221,7 +221,7 @@ fbq('track', 'PageView');
   }
   .tipo-card {
     background: rgba(255,255,255,0.05);
-    border: 1px solid rgba(26,173,168,0.2);
+    border: 1px solid rgba(41,182,246,0.2);
     border-radius: 16px; padding: 26px 22px;
     transition: all 0.25s;
     position: relative; overflow: hidden;
@@ -236,7 +236,7 @@ fbq('track', 'PageView');
   .tipo-card:hover {
     background: rgba(255,255,255,0.09);
     transform: translateY(-4px);
-    border-color: rgba(26,173,168,0.4);
+    border-color: rgba(41,182,246,0.4);
     box-shadow: 0 12px 32px rgba(0,0,0,0.3);
   }
   .tipo-num {
@@ -293,7 +293,7 @@ fbq('track', 'PageView');
   .benefits-visual::before {
     content: ''; position: absolute; top: -60px; right: -60px;
     width: 200px; height: 200px; border-radius: 50%;
-    background: rgba(14,124,123,0.2);
+    background: rgba(24,119,201,0.2);
   }
   .benefits-visual h3 {
     font-family: 'Playfair Display', serif;
@@ -361,7 +361,7 @@ fbq('track', 'PageView');
     display: flex; align-items: center; justify-content: center;
     font-size: 24px; font-weight: 800;
     margin-bottom: 20px; flex-shrink: 0;
-    box-shadow: 0 8px 28px rgba(14,124,123,0.45);
+    box-shadow: 0 8px 28px rgba(24,119,201,0.45);
   }
   .step h3 { font-size: 17px; font-weight: 800; color: var(--white); margin-bottom: 10px; }
   .step p { font-size: 14px; color: rgba(255,255,255,0.6); text-align: center; line-height: 1.7; }
@@ -375,11 +375,11 @@ fbq('track', 'PageView');
   @media (max-width: 600px) { .about-inner { grid-template-columns: 1fr; text-align: center; } }
   .about-photo {
     width: 140px; height: 140px; border-radius: 50%;
-    background: linear-gradient(135deg, var(--teal), #0a2a44);
+    background: linear-gradient(135deg, var(--teal), #04263f);
     display: flex; align-items: center; justify-content: center;
     font-family: 'Playfair Display', serif; font-size: 46px; color: white;
-    box-shadow: 0 8px 32px rgba(14,124,123,0.4); flex-shrink: 0;
-    overflow: hidden; border: 3px solid rgba(26,173,168,0.4);
+    box-shadow: 0 8px 32px rgba(24,119,201,0.4); flex-shrink: 0;
+    overflow: hidden; border: 3px solid rgba(41,182,246,0.4);
   }
   .about-photo img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
   .about .section-label { color: var(--teal2); }
@@ -388,9 +388,9 @@ fbq('track', 'PageView');
   .about p { font-size: 14px; color: rgba(255,255,255,0.65); margin-bottom: 14px; line-height: 1.8; }
   .about-tags { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 16px; }
   .about-tag {
-    background: rgba(14,124,123,0.18); color: var(--teal2);
+    background: rgba(24,119,201,0.18); color: var(--teal2);
     font-size: 11px; font-weight: 600; padding: 5px 14px;
-    border-radius: 50px; border: 1px solid rgba(14,124,123,0.25);
+    border-radius: 50px; border: 1px solid rgba(24,119,201,0.25);
   }
 
   /* CORREÇÃO 4: Credenciais destacadas */
@@ -444,7 +444,7 @@ fbq('track', 'PageView');
   }
   .final-cta::before {
     content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
-    background: radial-gradient(ellipse at center, rgba(14,124,123,0.06) 0%, transparent 70%);
+    background: radial-gradient(ellipse at center, rgba(24,119,201,0.06) 0%, transparent 70%);
     pointer-events: none;
   }
   .final-cta .section-label { color: var(--teal); }
@@ -461,16 +461,16 @@ fbq('track', 'PageView');
     display: inline-flex; align-items: center; gap: 10px;
     background: var(--gold); color: white; font-weight: 700; font-size: 16px;
     padding: 18px 36px; border-radius: 50px; text-decoration: none;
-    box-shadow: 0 10px 36px rgba(212,148,90,0.35); transition: all 0.2s;
+    box-shadow: 0 10px 36px rgba(201,151,58,0.35); transition: all 0.2s;
   }
-  .btn-wa-final:hover { transform: translateY(-3px); box-shadow: 0 14px 44px rgba(212,148,90,0.5); }
+  .btn-wa-final:hover { transform: translateY(-3px); box-shadow: 0 14px 44px rgba(201,151,58,0.5); }
   .btn-site-final {
     display: inline-flex; align-items: center; gap: 10px;
     background: var(--navy); color: white; font-weight: 700; font-size: 16px;
     padding: 18px 36px; border-radius: 50px; text-decoration: none;
-    box-shadow: 0 10px 30px rgba(13,33,55,0.2); transition: all 0.2s;
+    box-shadow: 0 10px 30px rgba(8,17,31,0.2); transition: all 0.2s;
   }
-  .btn-site-final:hover { transform: translateY(-3px); background: #0a1a2e; }
+  .btn-site-final:hover { transform: translateY(-3px); background: #061018; }
   .btn-wa-final svg, .btn-site-final svg { width: 20px; height: 20px; fill: white; flex-shrink: 0; }
   .final-note { font-size: 13px; color: var(--muted); }
 
@@ -509,7 +509,7 @@ fbq('track', 'PageView');
     text-align: center; padding: 8px 16px;
     position: fixed; bottom: 90px; left: 16px; right: 16px;
     border-radius: 12px; z-index: 998;
-    box-shadow: 0 4px 16px rgba(212,148,90,0.4);
+    box-shadow: 0 4px 16px rgba(201,151,58,0.4);
     animation: slideUp 0.5s 2s ease both;
   }
   @keyframes slideUp {
@@ -542,14 +542,14 @@ fbq('track', 'PageView');
 <!-- HERO — CORREÇÃO 1: sem animações no hero, conteúdo visível imediatamente -->
 <section class="hero">
   <span class="hero-badge">🧠 Sessão Online de Psicoanálise · R$97</span>
-  <h1>Você sabe o que está<br>te prendendo nos seus<br><em>relacionamentos?</em></h1>
+  <h1>Está sofrendo por causa de um relacionamento abusivo<br>e não consegue<br><em>se desprender dele?</em></h1>
   <p class="hero-sub">A dependência emocional tem 7 padrões diferentes — cada um com uma causa e uma saída. Em uma sessão online, começamos a descobrir o seu.</p>
   <div class="hero-ctas">
     <a class="btn-wa-hero" href="#tipos-dependencia" onclick="event.preventDefault(); document.getElementById('tipos-dependencia').scrollIntoView({behavior:'smooth'});" style="flex-direction:column; gap:4px; padding:14px 36px;">
       <span style="font-size:16px;">🔍 Quero entender o que está acontecendo comigo</span>
       <span style="font-size:11px; letter-spacing:0.1em; text-transform:uppercase; opacity:0.75;">clique e descubra <span class="arrow-down">↓</span></span>
     </a>
-    <a href="https://pay.kiwify.com.br/oMcCAsN" target="_blank" onclick="trackCheckout('hero-cta')" style="display:inline-flex; align-items:center; gap:10px; background:var(--gold); color:white; font-weight:700; font-size:16px; padding:18px 36px; border-radius:50px; text-decoration:none; box-shadow:0 10px 36px rgba(212,148,90,0.4); transition:all 0.2s;">
+    <a href="https://pay.kiwify.com.br/oMcCAsN" target="_blank" onclick="trackCheckout('hero-cta')" style="display:inline-flex; align-items:center; gap:10px; background:var(--gold); color:white; font-weight:700; font-size:16px; padding:18px 36px; border-radius:10px; text-decoration:none; box-shadow:0 10px 36px rgba(201,151,58,0.4); transition:all 0.2s;">
       🗓️ Agendar sessão — R$97
     </a>
     <a class="btn-site-hero" href="https://goisosias-stack.github.io/site-principal-v2.html?utm_source=lp-dependencia&utm_medium=landing_page&utm_campaign=dependencia-emocional" target="_blank" onclick="fbq('track','ViewContent')">
@@ -671,7 +671,7 @@ fbq('track', 'PageView');
 </section>
 
 <!-- CARROSSEL MÉTODO -->
-<section style="background:#1a1a2e;padding:80px 24px;text-align:center;">
+<section style="background:#08111f;padding:80px 24px;text-align:center;">
   <p class="section-label reveal" style="color:var(--teal2);">O método</p>
   <h2 class="reveal" style="color:white;margin-bottom:48px;">Como funciona o <em style="color:var(--gold);">método psicanalítico</em></h2>
 
@@ -688,25 +688,25 @@ fbq('track', 'PageView');
 
   <!-- CARDS -->
   <div style="position:relative;max-width:420px;margin:0 auto;min-height:280px;">
-    <div class="c-card active" data-idx="0" style="background:#f5f0eb;border-radius:24px;padding:44px 36px;position:absolute;width:100%;box-sizing:border-box;opacity:1;transform:translateY(0);transition:all 0.4s;">
+    <div class="c-card active" data-idx="0" style="background:#eef3f8;border-radius:24px;padding:44px 36px;position:absolute;width:100%;box-sizing:border-box;opacity:1;transform:translateY(0);transition:all 0.4s;">
       <div style="width:72px;height:72px;background:var(--gold);border-radius:18px;display:flex;align-items:center;justify-content:center;font-size:32px;margin:0 auto 24px;">👂</div>
-      <h3 style="font-family:'Playfair Display',serif;font-size:24px;color:#2c1a0e;margin-bottom:16px;font-weight:700;">Escuta Psicanalítica</h3>
-      <p style="font-size:15px;color:#6b4c35;line-height:1.8;">Mais do que ser ouvido, é um espaço onde sua fala ecoa. O silêncio e as entrelinhas revelam o que o consciente tenta ocultar — sem julgamento, no seu ritmo.</p>
+      <h3 style="font-family:'Playfair Display',serif;font-size:24px;color:#08111f;margin-bottom:16px;font-weight:700;">Escuta Psicanalítica</h3>
+      <p style="font-size:15px;color:#46586b;line-height:1.8;">Mais do que ser ouvido, é um espaço onde sua fala ecoa. O silêncio e as entrelinhas revelam o que o consciente tenta ocultar — sem julgamento, no seu ritmo.</p>
     </div>
-    <div class="c-card" data-idx="1" style="background:#f5f0eb;border-radius:24px;padding:44px 36px;position:absolute;width:100%;box-sizing:border-box;opacity:0;transform:translateY(20px);transition:all 0.4s;pointer-events:none;">
+    <div class="c-card" data-idx="1" style="background:#eef3f8;border-radius:24px;padding:44px 36px;position:absolute;width:100%;box-sizing:border-box;opacity:0;transform:translateY(20px);transition:all 0.4s;pointer-events:none;">
       <div style="width:72px;height:72px;background:var(--gold);border-radius:18px;display:flex;align-items:center;justify-content:center;font-size:32px;margin:0 auto 24px;">🔍</div>
-      <h3 style="font-family:'Playfair Display',serif;font-size:24px;color:#2c1a0e;margin-bottom:16px;font-weight:700;">Investigação do Padrão</h3>
-      <p style="font-size:15px;color:#6b4c35;line-height:1.8;">Aprofundamos naquilo que se repete sem que você perceba. Investigamos os sentidos ocultos por trás dos sintomas, buscando as raízes da sua dependência emocional.</p>
+      <h3 style="font-family:'Playfair Display',serif;font-size:24px;color:#08111f;margin-bottom:16px;font-weight:700;">Investigação do Padrão</h3>
+      <p style="font-size:15px;color:#46586b;line-height:1.8;">Aprofundamos naquilo que se repete sem que você perceba. Investigamos os sentidos ocultos por trás dos sintomas, buscando as raízes da sua dependência emocional.</p>
     </div>
-    <div class="c-card" data-idx="2" style="background:#f5f0eb;border-radius:24px;padding:44px 36px;position:absolute;width:100%;box-sizing:border-box;opacity:0;transform:translateY(20px);transition:all 0.4s;pointer-events:none;">
+    <div class="c-card" data-idx="2" style="background:#eef3f8;border-radius:24px;padding:44px 36px;position:absolute;width:100%;box-sizing:border-box;opacity:0;transform:translateY(20px);transition:all 0.4s;pointer-events:none;">
       <div style="width:72px;height:72px;background:var(--gold);border-radius:18px;display:flex;align-items:center;justify-content:center;font-size:32px;margin:0 auto 24px;">∞</div>
-      <h3 style="font-family:'Playfair Display',serif;font-size:24px;color:#2c1a0e;margin-bottom:16px;font-weight:700;">Construção de Sentido</h3>
-      <p style="font-size:15px;color:#6b4c35;line-height:1.8;">Pela associação livre, ligamos os pontos da sua história. Não se trata apenas de entender o passado, mas de dar um novo lugar ao que foi vivido.</p>
+      <h3 style="font-family:'Playfair Display',serif;font-size:24px;color:#08111f;margin-bottom:16px;font-weight:700;">Construção de Sentido</h3>
+      <p style="font-size:15px;color:#46586b;line-height:1.8;">Pela associação livre, ligamos os pontos da sua história. Não se trata apenas de entender o passado, mas de dar um novo lugar ao que foi vivido.</p>
     </div>
-    <div class="c-card" data-idx="3" style="background:#f5f0eb;border-radius:24px;padding:44px 36px;position:absolute;width:100%;box-sizing:border-box;opacity:0;transform:translateY(20px);transition:all 0.4s;pointer-events:none;">
+    <div class="c-card" data-idx="3" style="background:#eef3f8;border-radius:24px;padding:44px 36px;position:absolute;width:100%;box-sizing:border-box;opacity:0;transform:translateY(20px);transition:all 0.4s;pointer-events:none;">
       <div style="width:72px;height:72px;background:var(--gold);border-radius:18px;display:flex;align-items:center;justify-content:center;font-size:32px;margin:0 auto 24px;">✨</div>
-      <h3 style="font-family:'Playfair Display',serif;font-size:24px;color:#2c1a0e;margin-bottom:16px;font-weight:700;">Autonomia Emocional</h3>
-      <p style="font-size:15px;color:#6b4c35;line-height:1.8;">A transformação surge quando você deixa de ser refém da repetição e passa a ser autor da sua própria trajetória — livre para amar sem se perder.</p>
+      <h3 style="font-family:'Playfair Display',serif;font-size:24px;color:#08111f;margin-bottom:16px;font-weight:700;">Autonomia Emocional</h3>
+      <p style="font-size:15px;color:#46586b;line-height:1.8;">A transformação surge quando você deixa de ser refém da repetição e passa a ser autor da sua própria trajetória — livre para amar sem se perder.</p>
     </div>
   </div>
 
@@ -831,7 +831,7 @@ fbq('track', 'PageView');
     <div style="flex:1;min-width:220px;">
       <p style="font-size:14px;color:rgba(255,255,255,0.65);margin-bottom:16px;">Clique no botão abaixo e agende sua sessão nesse valor especial!</p>
       <a href="https://pay.kiwify.com.br/oMcCAsN" target="_blank" onclick="trackCheckout('bloco-preco')"
-        style="display:block;background:var(--gold);color:white;font-weight:800;font-size:16px;padding:16px 24px;border-radius:50px;text-decoration:none;box-shadow:0 10px 32px rgba(212,148,90,0.45);">
+        style="display:block;background:var(--gold);color:white;font-weight:800;font-size:16px;padding:16px 24px;border-radius:50px;text-decoration:none;box-shadow:0 10px 32px rgba(201,151,58,0.45);">
         🗓️ Agendar sessão online
       </a>
       <p style="font-size:11px;color:rgba(255,255,255,0.3);letter-spacing:0.1em;text-transform:uppercase;margin-top:12px;">COMPRA SEGURA · AGENDE EM ATÉ 24H</p>
@@ -840,7 +840,7 @@ fbq('track', 'PageView');
 
   <!-- GARANTIA + MINI PROVA SOCIAL — perto da decisão de compra -->
   <div class="reveal" style="max-width:680px;margin:28px auto 0;padding:0 16px;">
-    <div style="display:flex;align-items:center;justify-content:center;gap:10px;background:rgba(26,173,168,0.12);border:1px solid rgba(26,173,168,0.3);border-radius:50px;padding:12px 22px;margin-bottom:18px;">
+    <div style="display:flex;align-items:center;justify-content:center;gap:10px;background:rgba(41,182,246,0.12);border:1px solid rgba(41,182,246,0.3);border-radius:50px;padding:12px 22px;margin-bottom:18px;">
       <span style="font-size:20px;">🛡️</span>
       <p style="font-size:13px;color:var(--teal2);font-weight:700;margin:0;">Garantia de 7 dias — não fez a sessão por algum motivo? Você recebe 100% do valor de volta.</p>
     </div>
